@@ -43,6 +43,16 @@ class _HomeState extends ConsumerState<HomeScreen> {
             duration: const Duration(milliseconds: 900),
             child: const Image(image: AssetImage(Assets.assetsImagesLightJPG)),
           ),
+          Center(
+                child: Text(
+                  '현재 조도: ${controller.opacity}',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    color: Colors.white,
+                  ),
+                ),
+                
+              ),
         ],
       ),
     );
